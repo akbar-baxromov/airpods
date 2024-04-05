@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MR';
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header__nav{
+    background: #282828;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+.header__nav-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.header__nav-list{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.header__nav-link{
+color: #FFF;
+font-family: 'MB';
+font-size: 20px;
+}
+.header__nav-order{
+    display: flex;
+    gap: 25px;
+}
+.header__content{
+    background: url(../img/Header.jpg) no-repeat center /cover;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header__content-title{
+    color: #FFF;
+    font-family: 'PR';
+    font-size: 100px;
+    line-height: 75px;
+    padding-bottom: 38px;
+    text-align: center; 
+}
+.header__content-btn{
+    padding: 13px 15px;
+    border-radius: 10px;
+    background: #FFF;
+    color: #171718;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: flex;
+    gap: 11px;
+    border: none;
+}
+.main{
+    background: #151515;
+}
+.structure__box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+}
+.structure__box-text{
+    color: #FFF;
+    font-size: 22px;
+    width: 538px;
+}
+.structure__box-img{
+    padding-top: 30px;
+}
+.case__box{
+    display: flex;
+    gap: 87px;
+    justify-content: center;
+    align-items: center;
+}
+.case__box-text{
+    color: #FFF;
+    font-size: 22px;
+    width: 540px;
+}
+.case__box-img{
+    padding: 50px;
+}
+.pod__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+.pod__box-text{
+    color: #FFF;
+    font-family: 'MB';
+    font-size: 20px;
+    display: flex;
+}
+.pod__box-img{
+    display: flex;
+    align-items: center;
+
+}
+.pod__box-img::before,
+.pod__box-img::after{
+    content: '';
+    display: block;
+    background: #C4C4C4;
+    width: 61px;
+    height: 1px;
+}
+.phones__items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 80px;
+    padding-bottom: 55px;
+}
+.phones__item{
+    border-radius: 6px;
+    background: #FFF;
+    width: 255px;
+    height: 312px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.phones__item-title{
+    color: #000;
+    font-family: 'MB';
+    font-size: 20px;
+}
+.phones__item-img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.phones__item-cost{
+    color: #000;
+    font-family: 'MR';
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.phones__item-btn{
+    background: #151515;
+    color: #FFF;
+    font-family: 'MB';
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 7px 57px;
+}
+.footer{
+    background: #282828;
+    box-shadow: 0px -4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+.footer__box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 80px;
+}
+.footer__box-list{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.footer__box-link{
+    color: #FFF;
+    font-family: 'MB';
+    font-size: 20px;
+}
+.footer__box-cards{
+    display: flex;
+    gap: 30px;
+}
+@media(max-width:1140px){
+    .phones__items {
+        justify-content: center;
+    }
+    .img {
+    width: 100%;
+    }
+    .text{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media(max-width:770px){
+
+    .text{
+        font-size: 16px;
+    }
+    .footer__box{
+        justify-content: center;
+    }
+    .header__content-title{
+        font-size: 80px;
+    }
+}
+@media(max-width:576px){
+    .header__nav-box{
+        justify-content: center;
+    }
+    .header__content-title {
+        font-size: 60px;
+    }
+    .structure__box{
+        padding-top: 20px;
+    }
+    .case__box{
+        gap: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+@media(max-width:420px){
+    .header__nav-list{
+        gap: 15px;
+    }
+    .text{
+        font-size: 12px;
+    }
+}
